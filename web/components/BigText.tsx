@@ -1,3 +1,4 @@
+'use client'
 // https://github.com/delbaoliveira/website/blob/main/ui/challenge/TextSlider.tsx
 import React from 'react'
 
@@ -8,7 +9,7 @@ interface BigTextProps {
   slides: Array<string>
 }
 
-export default function BigText({ slides }: BigTextProps) {
+export function BigText({ slides }: BigTextProps) {
   const [currentSlide, setSlide] = React.useState(0)
 
   const totalSlides = slides.length

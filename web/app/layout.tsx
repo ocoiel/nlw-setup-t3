@@ -1,12 +1,16 @@
+import { Providers } from 'components/Providers'
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang='pt-br'>
+    <html suppressHydrationWarning lang='pt-br'>
       <head />
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
